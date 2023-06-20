@@ -1,0 +1,560 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  } 
+  body{
+    font-family: "Montserrat";
+  }
+  #container-1{
+    background: url(./images/360_F_436935867_bFgV6XSbklEyrOlwvps8WNo1SerlSnuu.jpg) no-repeat center center/cover;
+  }
+nav{
+  background: url(./images/360_F_436935867_bFgV6XSbklEyrOlwvps8WNo1SerlSnuu.jpg) no-repeat center center/cover;
+    height: 90px;
+    width: 100%;
+}
+label.logo{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 0 10px;
+    line-height: 80px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+nav ul{ 
+    float: right;
+    /* margin-right: 20px; */
+    /* border: 1px solid darkmagenta; */
+}
+
+.active:hover{
+    background: #ef55ef;
+    transition: 0.5s;
+}
+.col{
+    width: 30%;
+    display: block;
+    margin: 0 .75em;
+    /* border: 1px solid mediumblue; */
+  }
+  .col-1{
+    width: 100%;
+  }
+  .col li a{
+    color: aliceblue;
+  }
+  .col li {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+  }
+  .col-2 li{
+    margin: 0.2rem .9rem;
+    color: white;
+    font-size: 17px;
+    padding: 10px 7.2px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: forestgreen;
+  }
+  .col-2 li:hover{
+    background: navy;
+  }
+  .active {
+    background: lime;
+    /* justify-content: center; */
+    text-align: center;
+  }
+  .col-2{
+    display: flex;
+    /* border: 1px solid mediumblue; */
+  }
+@media(max-width:650px){
+    label.logo{
+        font-size: 30px;
+        padding-left:10px;
+    }
+    .header{
+        position: fixed;
+    }
+    /* #nav{
+        scroll-snap-type: none;
+    } */
+    .checkbtn{
+        display: block;
+    }
+    .col-2{
+        display: block;
+        width: 100%;
+      }
+    .col-1{
+        margin-top: 50px;
+        margin-bottom: -67px;
+        padding: 0 13px;
+        height: 9.4vh;
+        /* height: 5em;   */
+    }
+    .active{
+        display:block;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .active{
+        display: inline-block;
+        background: lime;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        border-radius: 3px;
+        justify-content: center;
+      }
+    .col{
+        margin:3px 0 ;
+        position: fixed;
+        width: 100%;
+        height: 150vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 100%;
+        z-index: 1;
+        overflow-x: hidden;
+        text-align: center;
+        transition: all 0.5s;  
+        border-radius: 0 0 50% 50%; 
+    }
+    .col-2{
+        display: block;
+        margin-top: 55.4px;
+        line-height: 40px;
+    }
+    nav ul li {
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color:#0082e6;
+    }
+    #check:checked ~ ul {
+        left : 0;
+    
+    }
+}
+  .contain-one{
+      width: 100%;
+      height: 100vh;
+    }
+    .header-text{
+      display: inline-block;
+      padding: 100px;
+    }
+    .header-text h1{
+      margin-top: 100px;
+      margin-bottom: 50px;
+      font-size:3.5rem;
+      color: antiquewhite;
+    }
+      .header-text span{
+      color: goldenrod;
+    }
+    .header-text p{
+      /* line-height: 4em; */
+      font-size: 2.0rem;
+      color: rgb(60, 31, 128);
+    }
+    .header-text .b{
+      font-style: italic;
+      font-size: 2.0rem;
+    }
+
+    /* container two */
+    .about{
+      text-transform: uppercase;
+      font-size: 3rem;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 1.5em;
+      margin-top: 2.5em;
+    }
+    .sub-1,.sub-2{
+      background: url(./images/photo.jpg) no-repeat center center/cover;
+      background-color: gray;
+      width: 50%;
+    }
+    .sub-2 img{
+      width: 100%;
+    }
+    .btn{
+      display: block;
+      margin: 50px auto;
+      width:fit-content;
+      border:1px solid #ff004f;
+      padding:14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: black;
+      transition: background 0.5s;
+    }
+    .btn2{
+      display:inline-block;
+      background: #ff004f;
+    }
+    .button-1{
+      display: flex;
+    }
+    #container-2{
+      display: flex;
+      /* border: 2px solid brown; */
+      width:100%;
+    }
+    .btn:hover{
+    background: #ff004f;
+    }
+    .sub-title{
+      font-size: 2em;
+      line-height: 1.25em;
+    }
+  @media(max-width:650px){
+   .header-text h1{
+    font-size: 2rem;
+    margin-top:8em;
+    margin-bottom: 1rem;
+    margin-left: -6rem;
+   }
+   .header-text p {
+    font-size: 1rem;
+    margin-left: -6rem;
+   }
+   .header-text .b{
+    font-size: 1rem;
+   }
+   #container-2{
+    flex-direction: column;
+   }
+   .sub-1,.sub-2{
+    width:100%;
+    font-size: 0.75rem;
+   }
+   #container-5{
+    justify-content: center;
+    display: flex;
+   }
+  }
+  #container-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+    background: url(./images/pexels-bruno-thethe-1910236.jpg) no-repeat center center/cover;
+  }
+
+  .box-2 {
+    width: 50%;
+    /* height: 80vh; */
+  }
+  .box-2 h1{
+    text-align: justify;
+    display: inline-block;
+    margin-top: 1.5em;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#fff;
+    text-transform:uppercase;
+  }
+  .btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    /* border: 1px solid #ff004f; */
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
+  }
+  .btn:hover {
+    background: #ff004f;
+  }
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    margin-top: 50px;
+  }
+  .work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: tranform 0.5s;
+  }
+  .layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(83, 10, 10, 0.6), #2bff00);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    transition: height 0.5s;
+  }
+  .layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  /* .layer a {
+    margin-top: 20px;
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 6px;
+    background: rgb(65, 40, 40);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+  } */
+  .solid i{
+    padding: 20px;
+    font-size: 1em;
+    color: red;
+  }
+  .work:hover img {
+    transform: scale(1.1);
+  }
+  .work:hover .layer {
+    height: 100%;
+  }
+  .work2 {
+    object-fit: contain;
+  }
+  /* section four  services*/
+  #container-4 {
+    background: url(./images/pexels-bruno-thethe-1910236.jpg) no-repeat center center/cover;
+    padding: 10px 10%;
+  }
+   /* #services{
+    padding: 30px 0;
+  } */
+  .sub-title-2{
+    text-align: justify;
+    display: inline-block;
+    margin-top: 1.5em;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#fff;
+    text-transform:uppercase;
+  }
+  .services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list i{
+    font-size: 50px;
+    margin-left: 30px;
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+}
+.services-list div a{
+    text-decoration:none;
+    color:#fff;
+    font-size: 12px;
+    margin-top:20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+/* container contact me */
+#container-5 {
+    background: url(./images/pexels-bruno-thethe-1910236.jpg) no-repeat center center/cover;
+    padding: 60px;
+  }
+  .form {
+    width: 500px;
+    height: 480px;
+    background: green;
+    /* position: absolute;
+        top:-20px;
+        left:870px; */
+    border-radius: 10px;
+    padding: 25px;
+    margin: auto;
+  }
+  .form h2 {
+    /* width:220px; */
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+  }
+  .form .input {
+    width: 450px;
+    height: 35px;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+  }
+  .form .input:focus {
+    outline: none;
+  }
+  ::placeholder {
+    color: #fff;
+    font-family: Arial;
+  }
+  .btnn {
+    width: 40%;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    margin-left: 130px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .btnn:hover {
+    background: #fff;
+    color: #ff7200;
+  }
+  .btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  .form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .form .link a {
+    text-decoration: none;
+  }
+  .form .liw {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #421d1d;
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+  }
+  .social i {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: auto 5px;
+  }
+  .social i:hover {
+    color: rgb(2, 255, 171);
+  }
+  /* end  footer */
+   .text {
+    text-align: center;
+    margin:40px auto;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    word-spacing: .75rem;
+  } 
+  :root{
+    --mycolor: rgb(255,0,140)
+  }
+  footer input[type='email']{
+    width: calc(100vw - 40vw);
+    font-size: 1.75rem;
+    padding: 10px;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    border: none;
+    color: var(--mycolor);
+  }
+  footer input[type='submit']{
+    border: none;
+    outline: none;
+    border-radius: 0 30px 30px 0;
+    padding: 10px;
+    color: #fff;
+    background: var(--mycolor);
+    font-size: 1.75rem;
+    cursor: pointer;
+  }
+  footer input:hover[type='email' ]{background: rgb(219, 3, 154); color: white};
+  footer input:hover[type='submit']{background:white;};
+  .social-media{
+    margin: 20px auto;
+  }
+  .social-media i {
+    padding:25px;
+    font-size: 2.1rem;
+    color: #fff;
+    justify-content: center;
+  }
+  .social-media i:hover {
+    color: rgb(2, 255, 171);
+  }
+  #footer{
+    width: 100%;
+    background:  rgba(121, 119, 15, 0.979);
+    background: url(./images/pexels-daniel-absi-952670.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
