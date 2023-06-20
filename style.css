@@ -83,7 +83,7 @@ nav ul{
     display: flex;
     /* border: 1px solid mediumblue; */
   }
-@media(max-width:650px){
+@media(max-width:750px){
     label.logo{
         font-size: 30px;
         padding-left:10px;
@@ -227,7 +227,7 @@ nav ul{
       font-size: 2em;
       line-height: 1.25em;
     }
-  @media(max-width:650px){
+  @media(max-width:750px){
    .header-text h1{
     font-size: 2rem;
     margin-top:8em;
